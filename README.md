@@ -5,6 +5,7 @@
 Hi! My name is Alfred.</br>
 Year 2 Computer Science Student in the National University of Singapore (NUS)
 
-Find out more about me!:</br>
+Find out more about me!:<br/>
 1. [My Projects](https://alfredbenoel.github.io/portfolio.github.io/root/index.html)
 2. [My Linkedin](https://www.linkedin.com/in/alfred-ben/)
+3. [My Resume](https://alfredbenoel.github.io/portfolio.github.io/root/resume.html)
