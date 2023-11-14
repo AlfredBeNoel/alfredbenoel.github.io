@@ -22,7 +22,7 @@ a{
     font-size: 1rem;
 }
 
-a:hover{
+a:hover, a.active{
     color: #eb7d34;
 }
 /* HEADER */
@@ -32,9 +32,13 @@ header{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 2rem 9%;
+    background: white;
     height: 60px;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -49,6 +53,9 @@ header{
 .navbar .links{
     display: flex;
     gap: 2rem;
+    margin-left: 3.5rem;
+    font-weight: 500;
+    font-size: 1.7rem;
 }
 
 .navbar .toggle_btn{
@@ -114,6 +121,7 @@ header{
 
 /* HOME PAGE */
 section#Home {
+    margin-top: 2rem;
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -128,16 +136,107 @@ section#Home {
     text-align: center;
 }
 
+#Home .Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 #Home h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 #Home .home-image{
-    width: 100%;
-    max-width: 50%;
-    margin-top: 2rem;
+    width: 150%;
+    max-width: 100%;
     height: auto;
+}
+
+#Home .home-content h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+#Home .text-animate {
+    width: 32.8rem;
+}
+
+#Home .text-animate h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #eb7d34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem 0 0.45rem;
+}
+
+#Home .home-content p {
+    font-size: 1rem;
+    margin: 2rem 0 1rem;
+}
+
+#Home .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 34.5rem;
+    height: 5rem;
+    margin: 1rem 0 0rem;
+}
+
+#Home .btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 15rem;
+    height: 100%;
+    background-color: #eb7d34;
+    border: .2rem solid #eb7d34;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#Home .btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: .5s;
+}
+
+#Home .btn-box .btn:hover::before {
+    width: 100%;
+}
+
+#Home .btn-box .btn:nth-child(2) {
+    background-color: transparent;
+    color: #eb7d34;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
 }
 
 /* RESPONSIVE DESIGN */
